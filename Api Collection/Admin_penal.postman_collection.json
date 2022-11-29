@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "13fa3bcb-d9c0-41b1-9433-a59575d21161",
+		"name": "Admin_penal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "admin@admin.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "smn@1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost/admin_penal/public/api/login"
+			},
+			"response": []
+		},
+		{
+			"name": "LogOut",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "NHQ1d3c3VnFheGQzdmdkNjBRMllvc2NFQkVVUFhPRHZ0MmJocVVqaVFZbUNWY1JkTU5VVmpLU2d3ODBS610902833302d",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "http://localhost/admin_penal/public/api/logout"
+			},
+			"response": []
+		},
+		{
+			"name": "GetProfile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "NHQ1d3c3VnFheGQzdmdkNjBRMllvc2NFQkVVUFhPRHZ0MmJocVVqaVFZbUNWY1JkTU5VVmpLU2d3ODBS610902833302d",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost/admin_penal/public/api/getprofile"
+			},
+			"response": []
+		}
+	]
+}
